@@ -85,12 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 ################### Alias ####################
-alias plz="sudo"
-alias jcomp-all="javac -d ./out/ *.java"
-alias jrun="java -cp ./out Main"
-alias jcr="jcomp-all; jrun"
-alias gi="python /Users/simonsundstrom/Dev/gitinspector/gitinspector.py"
-alias webme="cd /Users/simonsundstrom/WebDev/me/wp-content/themes/me"
+
+source ~/.dotfiles/zsh/alias
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.

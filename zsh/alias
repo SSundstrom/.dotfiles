@@ -1,0 +1,6 @@
+alias plz="sudo"
+alias jcomp-all="javac -d ./out/ *.java"
+alias jrun="java -cp ./out Main"
+alias jcr="jcomp-all; jrun"
+alias gi="python /Users/simonsundstrom/Dev/gitinspector/gitinspector.py"
+alias webme="cd /Users/simonsundstrom/WebDev/me/wp-content/themes/me"
