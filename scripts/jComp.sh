@@ -3,21 +3,19 @@
 DIRECTORY=".out"
 FILEXT=$1
 
+#TODO Fixa så $1 kan vara flagga för kompilatorn
+
 if [ ! -d $DIRECTORY ]; then
     mkdir .out
 fi
 
-if [[ $1 == *"-a"* ]]; then
-    javac -d .out *.java
-    STATUS=1
+
+if [ ! -f $FILEXT  ]; then
+  echo "No "$FILEXT" file to compile"
+  STATUS=0
 else
-  if [ ! -f $FILEXT  ]; then
-    echo "No "$FILEXT" file to compile"
-    STATUS=0
-  else
-    javac -d .out $FILEXT
-    STATUS=1
-  fi
+  javac -d .out $FILEXT
+  STATUS=1
 fi
 
 exit $STATUS

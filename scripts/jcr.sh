@@ -1,18 +1,17 @@
 #!/bin/bash
-if [[ "$1" == *"-a"* ]]; then
-  FILE=$2
-else
-  FILE=$1
-fi
+FILE=$1
 
-~/.dotfiles/scripts/jComp.sh $1".java"
-
-if [[ ! "$?" == "1" ]]; then
-  exit
-fi
+#TODO Fixa så $1 kan vara flagga för kompilatorn/java
+# Typ parsa -c*** alt. -r*** 
 
 if [[ "$FILE" == "" ]]; then
   FILE="Main"
+fi
+
+~/.dotfiles/scripts/jComp.sh $FILE".java"
+
+if [[ ! "$?" == "1" ]]; then
+  exit
 fi
 
 ~/.dotfiles/scripts/jRun.sh $FILE
