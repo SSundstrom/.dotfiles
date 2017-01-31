@@ -5,7 +5,7 @@ else
   FILE=$1
 fi
 
-~/.dotfiles/jComp.sh $1".java"
+~/.dotfiles/scripts/jComp.sh $1".java"
 
 if [[ ! "$?" == "1" ]]; then
   exit
@@ -15,4 +15,4 @@ if [[ "$FILE" == "" ]]; then
   FILE="Main"
 fi
 
-~/.dotfiles/jRun.sh $FILE
+~/.dotfiles/scripts/jRun.sh $FILE
