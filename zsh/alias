@@ -1,3 +1,8 @@
+alias gitrep="git stash; git pull --rebase; git stash pop"
+alias gitUntrack="git update-index --assume-unchanged"
+alias gitTrack="git update-index --no-assume-unchanged"
+alias b="cd ../"
+alias h="cd ~/"
 alias plz="sudo"
 alias jcomp="~/.dotfiles/scripts/jComp.sh"
 alias jrun="~/.dotfiles/scripts/jRun.sh"
