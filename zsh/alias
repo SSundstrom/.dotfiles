@@ -1,3 +1,6 @@
+alias changealias="vim ~/.dotfiles/zsh/alias"
+alias db="cd /Users/simonsundstrom/Chalmers/Databaser-TDA357"
+alias ds="cd /Users/simonsundstrom/Chalmers/Datastrukt-TDA416"
 alias gitrep="git stash; git pull --rebase; git stash pop"
 alias gitUntrack="git update-index --assume-unchanged"
 alias gitTrack="git update-index --no-assume-unchanged"
