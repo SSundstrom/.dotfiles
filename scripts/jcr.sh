@@ -1,8 +1,9 @@
 #!/bin/bash
 FILE=$1
+ARG=$2
 
 #TODO Fixa så $1 kan vara flagga för kompilatorn/java
-# Typ parsa -c*** alt. -r*** 
+# Typ parsa -c*** alt. -r***
 
 if [[ "$FILE" == "" ]]; then
   FILE="Main"
@@ -14,4 +15,4 @@ if [[ ! "$?" == "1" ]]; then
   exit
 fi
 
-~/.dotfiles/scripts/jRun.sh $FILE
+~/.dotfiles/scripts/jRun.sh $FILE $ARG
