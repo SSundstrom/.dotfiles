@@ -1,0 +1,5 @@
+quiz.simonsundstrom.it {
+	proxy / localhost:8888 {
+		websocket
+	}
+}

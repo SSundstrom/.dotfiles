@@ -1,0 +1,15 @@
+[Unit]
+Description=Spotify quiz - Node server front and backend
+Documentation=https://quiz.simonsundstrom.it
+After=network.target
+
+[Service]
+Environment=NODE_PORT=8888
+WorkingDirectory=/home/ssundstrom/DWIMS
+Type=simple
+User=%I
+ExecStart=/usr/bin/node /home/ssundstrom/DWIMS/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
