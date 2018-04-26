@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc
+# gcc
 #%%%%%%%%%%%%%%%%%
 #     brew	 %
 #%%%%%%%%%%%%%%%%%
@@ -9,7 +9,7 @@ brew update
 # brew some beer %
 #%%%%%%%%%%%%%%%%%
 brew cask install java spotify iterm2 intellij-idea atom
-brew install git android-sdk
+brew install git 
 
 #%%%%%%%%%%%%%%%%%
 #   oh-my-zsh    %
