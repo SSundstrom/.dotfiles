@@ -61,7 +61,7 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git brew z)
 
 source $ZSH/oh-my-zsh.sh
 
