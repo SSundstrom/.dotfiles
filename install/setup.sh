@@ -10,7 +10,10 @@ brew update
 # brew some beer %
 #%%%%%%%%%%%%%%%%%
 brew cask install java spotify iterm2 intellij-idea atom
-brew install git 
+brew install git fzf 
+
+# setup fzf: https://github.com/junegunn/fzf
+# TODO put stuff here
 
 #%%%%%%%%%%%%%%%%%
 #      git       %
