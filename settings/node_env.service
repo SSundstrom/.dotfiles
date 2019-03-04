@@ -7,7 +7,7 @@ After=network.target
 Environment=NODE_PORT=8888
 WorkingDirectory=/home/ssundstrom/DWIMS
 Type=simple
-User=%I
+User=ssundstrom
 ExecStart=/usr/bin/node /home/ssundstrom/DWIMS/index.js
 Restart=on-failure
 
