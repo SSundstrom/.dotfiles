@@ -1,4 +1,5 @@
 alias py="python"
+alias settings="cd ~/.dotfiles/settings"
 alias ga="git add ."
 alias changealias="vim ~/.dotfiles/zsh/alias"
 alias gs="git status"
