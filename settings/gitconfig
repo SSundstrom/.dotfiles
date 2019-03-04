@@ -1,0 +1,16 @@
+[core]
+    excludesfile = ~/.dotfiles/settings/gitignore_global
+[user]
+	name = Simon Sundström
+	email = ssundstrom@live.se
+[github]
+	user = SSundstrom
+[ghi]
+	token = !security find-internet-password -a SSundstrom -s github.com -l 'ghi token' -w
+[alias]
+    l = log --oneline --decorate --graph --all
+    aip = add --interactive --patch
+[rebase]
+    autostash = true
+[pull]
+    rebase=true
