@@ -4,7 +4,7 @@ gcc
 sudo -v
 
 # general apt
-sudo apt-get install htop git zsh
+sudo apt-get install htop git zsh nodejs fzf z
 
 # git       
 sh $HOME/.dotfiles/install/scripts/git.sh 
@@ -19,6 +19,10 @@ git clone --depth=1 https://github.com/amix/vimrc.git $HOME/.vim_runtime
 sh $HOME/.vim_runtime/install_awesome_vimrc.sh
 
 # Run install scripts
+curl https://getcaddy.com | bash
+git clone https://github.com/SSundstrom/DWIMS-CI.git $HOME/DWIMS-CI
+git clone https://github.com/SSundstrom/DWIMS.git $HOME/DWIMS
+
+# Run setup scripts
 sh $HOME/.dotfiles/install/scripts/caddy.sh
 sh $HOME/.dotfiles/install/scripts/musicquiz.sh
-

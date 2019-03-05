@@ -1,0 +1,15 @@
+[Unit]
+Description=Spotify quiz - CI backend for Github webhook 
+Documentation=https://quiz.simonsundstrom.it
+After=network.target
+
+[Service]
+Environment=NODE_PORT=8889
+WorkingDirectory=/home/ssundstrom/DWIMS-CI
+Type=simple
+User=ssundstrom
+ExecStart=/usr/bin/node /home/ssundstrom/DWIMS-CI/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

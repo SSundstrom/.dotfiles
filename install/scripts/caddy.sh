@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# get caddy
-curl https://getcaddy.com | bash
-
 # create folders and files for caddy
 sudo mkdir /etc/caddy
 sudo chown -R root:www-data /etc/caddy
@@ -18,7 +15,7 @@ sudo ufw allow http
 sudo ufw allow https
 
 # autostart with systemctl
-sudo ln -s $HOME/.dotfiles/settings/caddy.service /etc/systemd/system/caddy.service
+sudo ln -s $HOME/.dotfiles/settings/services/caddy.service /etc/systemd/system/caddy.service
 sudo systemctl daemon-reload
 sudo systemctl enable caddy.service
 sudo systemctl status caddy.service
