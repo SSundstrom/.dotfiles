@@ -12,6 +12,8 @@ npm install
 # Setup systemd
 sudo ln -s $HOME/.dotfiles/settings/services/node_env.service /etc/systemd/system/node_env.service
 sudo ln -s $HOME/.dotfiles/settings/services/dwims_ci.service /etc/systemd/system/dwims_ci.service
+sudo rm /etc/sudoers.d/dwims-ci-restart
+sudo cp $HOME/.dotfiles/install/resources/dwims-ci-restart /etc/sudoers.d/dwims-ci-restart
 
 sudo systemctl daemon-reload
 sudo systemctl enable node_env.service

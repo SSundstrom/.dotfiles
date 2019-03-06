@@ -1,0 +1,1 @@
+ssundstrom ALL=(ALL) /bin/systemctl restart dwims_ci.service
