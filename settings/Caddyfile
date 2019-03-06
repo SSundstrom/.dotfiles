@@ -1,5 +1,11 @@
 quiz.simonsundstrom.it {
-	proxy / localhost:8888 {
-		websocket
-	}
+    proxy /ci localhost:8889
+    proxy / localhost:8888 {
+        websocket
+    }
 }
+
+test.simonsundstrom.it {
+    proxy / localhost:8889
+}
+
