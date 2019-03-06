@@ -1,5 +1,6 @@
 [core]
     excludesfile = ~/.dotfiles/settings/gitignore_global
+	editor = vim
 [user]
 	name = Simon Sundström
 	email = ssundstrom@live.se
