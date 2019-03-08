@@ -1,1 +1,1 @@
-ssundstrom ALL=(ALL) /bin/systemctl restart dwims_ci.service
+ssundstrom ALL=(ALL) NOPASSWD: /bin/systemctl restart node_env.service
