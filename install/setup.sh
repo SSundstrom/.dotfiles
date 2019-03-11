@@ -18,6 +18,7 @@ brew install git fzf
 #%%%%%%%%%%%%%%%%%
 #      git       %
 #%%%%%%%%%%%%%%%%%
+brew install git
 sh ~/.dotfiles/install/scripts/git.sh 
 
 #%%%%%%%%%%%%%%%%%
