@@ -1,0 +1,15 @@
+[Unit]
+Description=[BETA]Spotify quiz - Node server front and backend
+Documentation=https://beta.musiquiz.eu
+After=network.target
+
+[Service]
+Environment=NODE_PORT=9999
+WorkingDirectory=/home/ssundstrom/DWIMS-BETA
+Type=simple
+User=ssundstrom
+ExecStart=/usr/bin/node /home/ssundstrom/DWIMS-BETA/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

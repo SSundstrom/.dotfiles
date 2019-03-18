@@ -1,1 +1,2 @@
 ssundstrom ALL=(ALL) NOPASSWD: /bin/systemctl restart node_env.service
+ssundstrom ALL=(ALL) NOPASSWD: /bin/systemctl restart musiquiz-beta.service

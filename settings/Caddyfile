@@ -1,8 +1,23 @@
 quiz.simonsundstrom.it {
-    proxy /ci localhost:8889
     proxy / localhost:8888 {
         websocket
     }
+}
+
+musiquiz.eu {
+    proxy / localhost:8888 {
+        websocket
+    }
+}
+
+beta.musiquiz.eu {
+    proxy / localhost:9999 {
+        websocket
+    }
+}
+
+deploy.musiquiz.eu {
+    proxy / localhost:8889
 }
 
 test.simonsundstrom.it {
