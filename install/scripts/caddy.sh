@@ -5,7 +5,7 @@ sudo rm -rf /etc/caddy
 sudo mkdir /etc/caddy
 sudo chown -R root:www-data /etc/caddy
 sudo rm /etc/caddy/Caddyfile
-sudo ln $HOME/.dotfiles/settings/Caddyfile /etc/caddy/Caddyfile
+sudo ln -s $HOME/.dotfiles/settings/Caddyfile /etc/caddy/Caddyfile
 sudo rm -rf /etc/ssl/caddy
 sudo mkdir /etc/ssl/caddy
 sudo chown -R www-data:root /etc/ssl/caddy
