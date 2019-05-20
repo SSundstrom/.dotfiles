@@ -1,2 +1,2 @@
-export PATH="$HOME/Library/Haskell/bin:$PATH:/Users/simonsundstrom/.local/bin"
+export PATH="$PATH:/Users/simonsundstrom/.local/bin"
 export TERM="xterm-256color"

@@ -7,6 +7,9 @@
 *.o
 *.so
 
+# Python
+venv
+
 # Temporary files #
 ###################
 *.swp
@@ -39,7 +42,8 @@ Thumbs.db
 
 # VS-Code #
 ###########
-*.vs_code
+.vs_code/
 *.code-workspace
+.vscode
 
 *.lock
