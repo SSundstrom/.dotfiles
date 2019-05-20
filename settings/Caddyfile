@@ -24,3 +24,6 @@ test.simonsundstrom.it {
     proxy / localhost:8889
 }
 
+rebecca.finne.se, localhost:9090 {
+    root /www/rebecca-hemsida
+}
