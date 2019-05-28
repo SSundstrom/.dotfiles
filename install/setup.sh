@@ -9,7 +9,7 @@ brew update
 #%%%%%%%%%%%%%%%%%
 # brew some beer %
 #%%%%%%%%%%%%%%%%%
-brew cask install java spotify iterm2 intellij-idea 
+brew cask install spotify iterm2 z
 
 #%%%%%%%%%%%%%%%%%
 #      git       %
