@@ -3,3 +3,17 @@ prmerge() {
   shift
   gh pr review "$pr" "$@" --approve && gh pr merge "$pr" "$@" --rebase
 }
+
+_prmerge() {
+  local -a prs repo_args
+  local i
+  for ((i=2; i<=$#words; i++)); do
+    if [[ ${words[i]} == "-R" || ${words[i]} == "--repo" ]]; then
+      repo_args=(-R ${words[i+1]})
+      break
+    fi
+  done
+  prs=(${(f)"$(gh pr list $repo_args --json number,title --jq '.[] | "\(.number):\(.title)"' 2>/dev/null)"})
+  _describe 'pr' prs
+}
+compdef _prmerge prmerge
