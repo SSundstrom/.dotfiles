@@ -1,0 +1,5 @@
+prmerge() {
+  local pr=$1
+  shift
+  gh pr review "$pr" "$@" --approve && gh pr merge "$pr" "$@" --rebase
+}
