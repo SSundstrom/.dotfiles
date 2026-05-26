@@ -1,2 +1,6 @@
-export PATH="$PATH:/Users/simonsundstrom/.local/bin"
-export TERM="xterm-256color"
+export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
