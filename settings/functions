@@ -16,4 +16,35 @@ _prmerge() {
   prs=(${(f)"$(gh pr list $repo_args --json number,title --jq '.[] | "\(.number):\(.title)"' 2>/dev/null)"})
   _describe 'pr' prs
 }
+
 compdef _prmerge prmerge
+
+# Show docker disk usage (host view + inside colima VM)
+ddisk() {
+  docker system df
+  echo ""
+  colima ssh -- df -h /var/lib/docker
+}
+
+# Free docker disk space in colima.
+# dclean        -> conservative: dangling images + build cache >7 days
+# dclean --day  -> dangling images + build cache >24 hours
+# dclean --all  -> aggressive: all unused images + entire build cache
+dclean() {
+  case $1 in
+    --all)
+      docker image prune -a -f
+      docker builder prune -a -f
+      ;;
+    --day)
+      docker image prune -f
+      docker builder prune -f --filter until=24h
+      ;;
+    *)
+      docker image prune -f
+      docker builder prune -f --filter until=168h
+      ;;
+  esac
+  echo ""
+  ddisk
+}
